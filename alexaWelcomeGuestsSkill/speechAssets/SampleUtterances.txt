@@ -1,0 +1,7 @@
+WelcomeIntent to welcome my {Guest}
+WelcomeIntent to welcome {Guest}
+WelcomeIntent to say hello to my {Guest}
+WelcomeIntent to say hello to {Guest}
+WelcomeIntent to my {Guest}
+WelcomeIntent to {Guest}
+WelcomeIntent to call {Guest}

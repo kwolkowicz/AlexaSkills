@@ -1,0 +1,22 @@
+{
+  "intents": [
+    {
+      "intent": "WelcomeIntent",
+      "slots": [
+      {
+        "name" : "Guest",
+        "type": "LIST_OF_GUESTS"
+      }
+     ]
+    },
+   {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
