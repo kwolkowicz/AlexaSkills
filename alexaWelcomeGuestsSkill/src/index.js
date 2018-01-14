@@ -14,14 +14,6 @@ var HowTo = function () {
 HowTo.prototype = Object.create(GreetingsSkill.prototype);
 HowTo.prototype.constructor = HowTo;
 
-HowTo.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    var speechText = "Who is comming? I would like to know who i need to welcome...";
-    // If the user either does not reply to the welcome message or says something that is not
-    // understood, they will be prompted again with this text.
-    var repromptText = "Sorry I did not understand, can you please repeat who is comming?";
-    response.ask(speechText, repromptText);
-};
-
 HowTo.prototype.intentHandlers = {
     "WelcomeIntent": function (intent, session, response) {
         var welcomeSlot = intent.slots.Guest,
