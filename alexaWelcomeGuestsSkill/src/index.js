@@ -22,7 +22,7 @@ HowTo.prototype.intentHandlers = {
             guestName = welcomeSlot.value.toLowerCase();
         }
 
-        var cardTitle = "Following guest was welcome " + guestName,
+        var cardTitle = "Following guest was welcome: " + guestName,
             welcomeLine = greetings[guestName],
             speechOutput,
             repromptOutput;
@@ -35,16 +35,16 @@ HowTo.prototype.intentHandlers = {
         } else {
             var speech;
             if (guestName) {
-                speech = "I'm sorry, I currently do not know the greetings line for  " + guestName + ". What else can I help with?";
+                speech = "<speak> I'm sorry, I currently do not know the greetings line for  " + guestName + ". What else can I help with? </speak>";
             } else {
-                speech = "I'm sorry, I currently do not know the greetings line for . What else can I help with?";
+                speech = "<speak> I'm sorry, I currently do not know the greetings line for . What else can I help with? </speak>";
             }
             speechOutput = {
                 speech: speech,
                 type: GreetingsSkill.speechOutputType.SSML
             };
             repromptOutput = {
-                speech: "What else can I help with?",
+                speech: "<speak> What else can I help with? </speak>",
                 type: GreetingsSkill.speechOutputType.SSML
             };
             response.ask(speechOutput, repromptOutput);
@@ -62,8 +62,8 @@ HowTo.prototype.intentHandlers = {
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        var speechText = "You can ask questions such as, what's the answer, or, you can say exit... Now, what can I help you with?";
-        var repromptText = "You can say things like, what's the greetings line, or you can say exit... Now, what can I help you with?";
+        var speechText = "<speak> You can ask questions such as, what's the answer, or, you can say exit... Now, what can I help you with? </speak>";
+        var repromptText = "<speak> You can say things like, what's the greetings line, or you can say exit... Now, what can I help you with? </speak>";
         var speechOutput = {
             speech: speechText,
             type: GreetingsSkill.speechOutputType.SSML
