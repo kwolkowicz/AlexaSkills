@@ -1,3 +1,7 @@
 **Greetings Skill**
 
-This skill will allow you to greet your guests within Alexa. Just say: "Ask greetings skill to welcome <guest>" and Alexa will welcome your <guest> with unique greeting line.
+This skill will allow you to greet your guests within Alexa. 
+Just say: "Ask greetings skill to welcome <guest>" and Alexa will welcome your <guest> with unique greeting line.
+
+TO DO
+1. Add new guest and welcome line directly through Alexa!
